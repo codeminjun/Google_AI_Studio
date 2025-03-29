@@ -1,0 +1,80 @@
+/* 전체 페이지 기본 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #fff;   /* 상하단 흰색 배경 */
+  color: #333;
+}
+
+/* 메인 컨테이너 (카드 형태) */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;           /* 페이지 중앙 배치 (상단 여백 100px) */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  padding: 30px;
+}
+
+/* 제목 스타일 */
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+/* 질문 입력 textarea 스타일 */
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ff9a44; /* 포커스 시 보더 컬러 (오렌지) */
+}
+
+/* 버튼 스타일 */
+button {
+  display: inline-block;
+  width: 100%;
+  background-color: #ff9a44; /* 오렌지 */
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff7a1f; /* 호버 시 좀 더 진한 오렌지 */
+}
+
+/* 응답 영역 스타일 */
+#responseArea {
+  margin-top: 20px;
+  min-height: 80px;             /* 최소 높이로 레이아웃 안정화 */
+  padding: 15px;
+  border: 1px solid #ff9a44;
+  border-radius: 6px;
+  background-color: #faf6ea;    /* 옅은 오렌지빛 배경 */
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s;
+}
+
+/* 로딩 상태일 때 스타일 (선택사항) */
+#responseArea.loading {
+  background-color: #fff3e5;
+  color: #777;
+}
